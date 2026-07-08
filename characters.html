@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Characters | Westbond City RP</title>
+
+  <style>
+    :root {
+      --brown-dark: #1a120c;
+      --brown: #3b2a1c;
+      --beige: #d9c3a3;
+      --beige-light: #f3e2c5;
+      --black: #000;
+      --gold: #c9a15b;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Segoe UI", sans-serif;
+    }
+
+    body {
+      background: radial-gradient(circle at top, var(--brown) 0%, var(--brown-dark) 40%, var(--black) 100%);
+      color: var(--beige-light);
+      padding: 40px 20px;
+      display: flex;
+      justify-content: center;
+    }
+
+    .page-wrapper {
+      width: 100%;
+      max-width: 1100px;
+      background: linear-gradient(135deg, rgba(15,10,7,0.95), rgba(40,26,18,0.98));
+      border-radius: 18px;
+      border: 1px solid rgba(201,161,91,0.35);
+      box-shadow: 0 0 40px rgba(0,0,0,0.9);
+      overflow: hidden;
+      display: grid;
+      grid-template-columns: 3fr 2fr;
+    }
+
+    /* LEFT SIDE */
+    .content-section {
+      padding: 32px;
+      border-right: 1px solid rgba(217,195,163,0.12);
+      display: flex;
+      flex-direction: column;
+      gap: 28px;
+    }
+
+    .page-title {
+      font-size: 2rem;
+      text-transform: uppercase;
+      letter-spacing: 0.16em;
+      color: var(--beige-light);
+    }
+
+    .divider {
+      height: 1px;
+      background: linear-gradient(to right, transparent, rgba(217,195,163,0.45), transparent);
+      margin: 6px 0 20px 0;
+    }
+
+    /* CHARACTER CARD */
+    .character-card {
+      background: rgba(27,17,11,0.9);
+      border-radius: 14px;
+      border: 1px solid rgba(201,161,91,0.35);
+      padding: 18px 20px;
+    }
+
+    .character-card h2 {
+      font-size: 1.4rem;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      color: var(--gold);
+      margin-bottom: 6px;
+    }
+
+    .character-subtitle {
+      font-size: 0.9rem;
+      color: var(--beige);
+      margin-bottom: 12px;
+      letter-spacing: 0.08em;
+    }
+
+    .character-info {
+      font-size: 0.9rem;
+      line-height: 1.5;
+      color: var(--beige-light);
+    }
+
+    .character-info strong {
+      color: var(--gold);
+    }
+
+    /* RIGHT SIDE */
+    .side-panel {
+      padding: 28px;
+      background: radial-gradient(circle at 0% 0%, var(--brown) 0%, var(--brown-dark) 40%, var(--black) 100%);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 20px;
+    }
+
+    .nav-block h3 {
+      font-size: 0.95rem;
+      text-transform: uppercase;
+      letter-spacing: 0.18em;
+      color: var(--beige-light);
+      margin-bottom: 12px;
+    }
+
+    .nav-buttons {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .nav-buttons a {
+      display: flex;
+      justify-content: space-between;
+      padding: 10px 12px;
+      border-radius: 999px;
+      border: 1px solid rgba(217,195,163,0.45);
+      background: linear-gradient(135deg, rgba(243,226,197,0.08), rgba(75,52,35,0.85));
+      color: var(--beige-light);
+      text-decoration: none;
+      font-size: 0.9rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      transition: 0.2s ease;
+    }
+
+    .nav-buttons a:hover {
+      background: linear-gradient(135deg, rgba(243,226,197,0.16), rgba(90,60,40,0.95));
+      transform: translateY(-1px);
+      box-shadow: 0 0 12px rgba(0,0,0,0.6);
+    }
+
+    .footer-strip {
+      font-size: 0.78rem;
+      text-align: right;
+      color: rgba(217,195,163,0.7);
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+    }
+
+    @media (max-width: 900px) {
+      .page-wrapper {
+        grid-template-columns: 1fr;
+      }
+      .content-section {
+        border-right: none;
+        border-bottom: 1px solid rgba(217,195,163,0.12);
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="page-wrapper">
+
+    <!-- LEFT SIDE -->
+    <section class="content-section">
+      <h1 class="page-title">Characters</h1>
+      <div class="divider"></div>
+
+      <!-- Patsy Leon -->
+      <div class="character-card">
+        <h2>Patsy Leon</h2>
+        <div class="character-subtitle">The Court King of Westbond</div>
+        <div class="character-info">
+          <strong>Affiliation:</strong> Nova Watch Supporter<br>
+          <strong>Roles:</strong> Rapper, Basketball Player<br><br>
+          Patsy Leon is one of Westbond City’s loudest voices — a rapper whose lyrics
+          attack Guardian corruption and a basketball star whose games unite the city.
+          His hatred for the Guardians is unmatched, and he uses his influence to
+          support Nova Watch operations through music, crowds, and underground messaging.
+        </div>
+      </div>
+
+      <!-- Alan Jez -->
+      <div class="character-card">
+        <h2>Alan Jez</h2>
+        <div class="character-subtitle">The Robin Hood of Guardia</div>
+        <div class="character-info">
+          <strong>Affiliation:</strong> Neutral (Supports Westbond)<br>
+          <strong>Roles:</strong> Robber, Smuggler<br><br>
+          Alan Jez is infamous for robbing Guardia City’s wealthy elites and secretly
+          funneling the money back into Westbond’s poorest districts. He never harms
+          civilians and never keeps a dollar for himself. To Guardia he’s a criminal —
+          to Westbond he’s a hero.
+        </div>
+      </div>
+
+      <!-- Delmar Zack -->
+      <div class="character-card">
+        <h2>Delmar Zack</h2>
+        <div class="character-subtitle">The Laser Sentinel</div>
+        <div class="character-info">
+          <strong>Affiliation:</strong> Nova Watch Member<br>
+          <strong>Roles:</strong> Soldier, City Defender<br><br>
+          Delmar Zack is one of Nova Watch’s most disciplined soldiers. Armed with a
+          high‑precision laser pistol, he patrols Westbond’s borders with unwavering
+          seriousness. He believes the city must be protected at all costs — from
+          Seron Darkness, Guardian oppression, and any threat that crosses the line.
+        </div>
+      </div>
+
+    </section>
+
+    <!-- RIGHT SIDE -->
+    <aside class="side-panel">
+      <div>
+        <div class="nav-block">
+          <h3>Navigate</h3>
+          <div class="nav-buttons">
+            <a href="index.html">Home <span>⟶</span></a>
+            <a href="lore.html">Lore <span>⟶</span></a>
+            <a href="stories.html">Stories <span>⟶</span></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-strip">
+        Westbond City RP · Character Database
+      </div>
+    </aside>
+
+  </div>
+
+</body>
+</html>
