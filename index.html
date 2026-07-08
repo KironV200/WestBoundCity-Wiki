@@ -2,52 +2,67 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Westbond City RP – Intro | The Rise Of Seron Universe</title>
+  <title>Westbond City RP – Intro | Rise of Seron Universe</title>
+
   <style>
     :root {
-      --brown-dark: #2b1b12;
-      --brown: #4a2f1f;
-      --beige-light: #f3e2c5;
+      --brown-dark: #1a120c;
+      --brown: #3b2a1c;
       --beige: #d9c3a3;
-      --black: #0b0b0b;
-      --accent-gold: #c9a15b;
+      --beige-light: #f3e2c5;
+      --black: #000;
+      --gold: #c9a15b;
     }
 
     * {
-      box-sizing: border-box;
       margin: 0;
       padding: 0;
-      font-family: "Segoe UI", system-ui, -apple-system, sans-serif;
+      box-sizing: border-box;
+      font-family: "Segoe UI", sans-serif;
     }
 
     body {
-      background: radial-gradient(circle at top, #3b2a1c 0, #120c08 45%, #000000 100%);
+      background: radial-gradient(circle at top, var(--brown) 0%, var(--brown-dark) 40%, var(--black) 100%);
       color: var(--beige-light);
-      min-height: 100vh;
+      padding: 40px 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    /* HUGE CENTER LOGO */
+    .center-hero-logo {
+      width: 100%;
       display: flex;
       justify-content: center;
-      align-items: stretch;
-      padding: 40px 20px;
+      margin-bottom: 40px;
     }
 
+    .center-hero-logo img {
+      width: 420px;
+      height: auto;
+      object-fit: contain;
+      border-radius: 12px;
+      filter: drop-shadow(0 0 25px rgba(0,0,0,0.8));
+    }
+
+    /* MAIN WRAPPER */
     .page-wrapper {
-      max-width: 1100px;
       width: 100%;
-      background: linear-gradient(135deg, rgba(15, 10, 7, 0.95), rgba(40, 26, 18, 0.98));
+      max-width: 1100px;
+      background: linear-gradient(135deg, rgba(15,10,7,0.95), rgba(40,26,18,0.98));
       border-radius: 18px;
-      border: 1px solid rgba(201, 161, 91, 0.35);
-      box-shadow:
-        0 0 40px rgba(0, 0, 0, 0.9),
-        0 0 80px rgba(0, 0, 0, 0.7);
+      border: 1px solid rgba(201,161,91,0.35);
+      box-shadow: 0 0 40px rgba(0,0,0,0.9);
       overflow: hidden;
       display: grid;
-      grid-template-columns: minmax(0, 3fr) minmax(0, 2fr);
+      grid-template-columns: 3fr 2fr;
     }
 
-    /* Left side – main intro */
+    /* LEFT SIDE */
     .intro-section {
-      padding: 32px 32px 28px 32px;
-      border-right: 1px solid rgba(217, 195, 163, 0.12);
+      padding: 32px;
+      border-right: 1px solid rgba(217,195,163,0.12);
       display: flex;
       flex-direction: column;
       gap: 22px;
@@ -61,40 +76,16 @@
       opacity: 0.85;
     }
 
-    .title-row {
-      display: flex;
-      align-items: center;
-      gap: 18px;
-    }
-
-    .logo-frame {
-      width: 80px;
-      height: 80px;
-      border-radius: 16px;
-      border: 1px solid rgba(201, 161, 91, 0.6);
-      background: radial-gradient(circle at 30% 0%, #f3e2c5 0, #4a2f1f 40%, #0b0b0b 100%);
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      overflow: hidden;
-    }
-
-    .logo-frame img {
-      max-width: 100%;
-      max-height: 100%;
-      object-fit: contain;
-    }
-
     .title-block h1 {
       font-size: 2rem;
-      color: var(--beige-light);
       text-transform: uppercase;
       letter-spacing: 0.16em;
+      color: var(--beige-light);
     }
 
     .title-block h2 {
       font-size: 0.95rem;
-      color: var(--accent-gold);
+      color: var(--gold);
       text-transform: uppercase;
       letter-spacing: 0.18em;
       margin-top: 4px;
@@ -102,13 +93,8 @@
 
     .divider {
       height: 1px;
-      background: linear-gradient(
-        to right,
-        rgba(217, 195, 163, 0.0),
-        rgba(217, 195, 163, 0.45),
-        rgba(217, 195, 163, 0.0)
-      );
-      margin: 6px 0 4px 0;
+      background: linear-gradient(to right, transparent, rgba(217,195,163,0.45), transparent);
+      margin: 6px 0;
     }
 
     .intro-text {
@@ -118,21 +104,19 @@
     }
 
     .intro-text strong {
-      color: var(--accent-gold);
-      font-weight: 600;
+      color: var(--gold);
     }
 
     .focus-row {
       display: grid;
-      grid-template-columns: repeat(2, minmax(0, 1fr));
+      grid-template-columns: repeat(2, 1fr);
       gap: 16px;
-      margin-top: 4px;
     }
 
     .focus-card {
-      background: rgba(27, 17, 11, 0.9);
+      background: rgba(27,17,11,0.9);
       border-radius: 12px;
-      border: 1px solid rgba(201, 161, 91, 0.35);
+      border: 1px solid rgba(201,161,91,0.35);
       padding: 12px 14px;
     }
 
@@ -140,7 +124,7 @@
       font-size: 0.9rem;
       text-transform: uppercase;
       letter-spacing: 0.12em;
-      color: var(--accent-gold);
+      color: var(--gold);
       margin-bottom: 6px;
     }
 
@@ -150,10 +134,10 @@
       color: var(--beige);
     }
 
-    /* Right side – navigation & atmosphere */
+    /* RIGHT SIDE */
     .side-panel {
-      padding: 28px 26px 24px 26px;
-      background: radial-gradient(circle at 0% 0%, #4a2f1f 0, #1a120c 40%, #000000 100%);
+      padding: 28px;
+      background: radial-gradient(circle at 0% 0%, var(--brown) 0%, var(--brown-dark) 40%, var(--black) 100%);
       display: flex;
       flex-direction: column;
       justify-content: space-between;
@@ -175,61 +159,38 @@
     }
 
     .nav-buttons a {
-      display: inline-flex;
-      align-items: center;
+      display: flex;
       justify-content: space-between;
       padding: 10px 12px;
       border-radius: 999px;
-      border: 1px solid rgba(217, 195, 163, 0.45);
-      background: linear-gradient(
-        135deg,
-        rgba(243, 226, 197, 0.08),
-        rgba(75, 52, 35, 0.85)
-      );
+      border: 1px solid rgba(217,195,163,0.45);
+      background: linear-gradient(135deg, rgba(243,226,197,0.08), rgba(75,52,35,0.85));
       color: var(--beige-light);
       text-decoration: none;
       font-size: 0.9rem;
       letter-spacing: 0.08em;
       text-transform: uppercase;
-      transition: background 0.2s ease, transform 0.15s ease, box-shadow 0.15s ease;
-    }
-
-    .nav-buttons a span.label {
-      font-weight: 600;
-    }
-
-    .nav-buttons a span.chevron {
-      font-size: 0.9rem;
-      color: var(--accent-gold);
+      transition: 0.2s ease;
     }
 
     .nav-buttons a:hover {
-      background: linear-gradient(
-        135deg,
-        rgba(243, 226, 197, 0.16),
-        rgba(90, 60, 40, 0.95)
-      );
+      background: linear-gradient(135deg, rgba(243,226,197,0.16), rgba(90,60,40,0.95));
       transform: translateY(-1px);
-      box-shadow: 0 0 12px rgba(0, 0, 0, 0.6);
+      box-shadow: 0 0 12px rgba(0,0,0,0.6);
     }
 
     .atmosphere-block {
-      margin-top: 10px;
       padding: 12px 14px;
       border-radius: 14px;
-      border: 1px solid rgba(201, 161, 91, 0.4);
-      background: linear-gradient(
-        145deg,
-        rgba(15, 10, 7, 0.9),
-        rgba(43, 27, 18, 0.95)
-      );
+      border: 1px solid rgba(201,161,91,0.4);
+      background: linear-gradient(145deg, rgba(15,10,7,0.9), rgba(43,27,18,0.95));
     }
 
     .atmosphere-block h4 {
       font-size: 0.9rem;
       text-transform: uppercase;
       letter-spacing: 0.14em;
-      color: var(--accent-gold);
+      color: var(--gold);
       margin-bottom: 6px;
     }
 
@@ -242,124 +203,94 @@
     .footer-strip {
       font-size: 0.78rem;
       text-align: right;
-      color: rgba(217, 195, 163, 0.7);
-      margin-top: 10px;
+      color: rgba(217,195,163,0.7);
       letter-spacing: 0.12em;
       text-transform: uppercase;
     }
 
     @media (max-width: 900px) {
       .page-wrapper {
-        grid-template-columns: minmax(0, 1fr);
+        grid-template-columns: 1fr;
       }
       .intro-section {
         border-right: none;
-        border-bottom: 1px solid rgba(217, 195, 163, 0.12);
-      }
-    }
-
-    @media (max-width: 640px) {
-      body {
-        padding: 20px 10px;
-      }
-      .intro-section,
-      .side-panel {
-        padding: 22px 18px;
-      }
-      .title-row {
-        flex-direction: column;
-        align-items: flex-start;
-      }
-      .logo-frame {
-        width: 70px;
-        height: 70px;
+        border-bottom: 1px solid rgba(217,195,163,0.12);
       }
     }
   </style>
 </head>
+
 <body>
+
+  <!-- HUGE CENTER LOGO -->
+  <div class="center-hero-logo">
+    <img src="westbound logo.png" alt="Westbond City RP Logo" />
+  </div>
+
   <div class="page-wrapper">
-    <!-- LEFT: Intro / Series context -->
+
+    <!-- LEFT SIDE -->
     <section class="intro-section">
       <div class="universe-tag">
         A SERIES WITHIN THE RISE OF SERON UNIVERSE
       </div>
 
-      <div class="title-row">
-        <div class="logo-frame">
-          <!-- Replace src with correct path if needed -->
-          <img src="westbound logo.png" alt="Westbond City RP Logo" />
-        </div>
-        <div class="title-block">
-          <h1>Westbond City RP</h1>
-          <div class="divider"></div>
-          <h2>Nova Watch Lives In A Hostile City</h2>
-        </div>
+      <div class="title-block">
+        <h1>Westbond City RP</h1>
+        <div class="divider"></div>
+        <h2>Nova Watch Lives in a Hostile City</h2>
       </div>
 
       <div class="intro-text">
-        In <strong>Westbond City RP</strong>, the spotlight falls on the everyday and
-        extraordinary lives of <strong>Nova Watch Supporters</strong> and
-        <strong>Nova Watch Members</strong> as they navigate a city carved into the
-        larger conflict of <strong>The Rise Of Seron</strong>.
-        <br /><br />
-        Their stories unfold in streets overshadowed by the hostile gaze of the
-        <strong>Guardians</strong> and the creeping influence of
-        <strong>Seron Darkness</strong>—where loyalty, survival, and quiet rebellion
-        collide in the alleys, towers, and hidden networks of Westbond.
+        Westbond City RP follows the intertwined lives of 
+        <strong>Nova Watch Supporters</strong> and 
+        <strong>Nova Watch Members</strong> as they navigate a city shaped by conflict 
+        and ideology. Their world is overshadowed by the watchful hostility of the 
+        <strong>Guardians</strong> and the creeping influence of 
+        <strong>Seron Darkness</strong>, creating a landscape where survival, loyalty, 
+        and quiet rebellion define everyday life. 
+        
       </div>
 
       <div class="focus-row">
         <article class="focus-card">
           <h3>Nova Watch Perspective</h3>
           <p>
-            Follow Nova Watch Members and Supporters as they balance public duty,
-            underground alliances, and personal sacrifice. Every patrol, meeting,
-            and whispered conversation reveals how far they will go to protect
-            Westbond from the shadows pressing in.
+            Members and supporters balance duty, underground alliances, and personal 
+            sacrifice. Every patrol and whispered meeting reveals how far they will go 
+            to protect Westbond from the shadows closing in.
           </p>
         </article>
 
         <article class="focus-card">
           <h3>Hostile Forces</h3>
           <p>
-            The Guardians’ rigid control and the insidious spread of Seron Darkness
-            shape the city’s tension. Westbond becomes a battleground of ideology
-            and fear, where Nova Watch must decide when to stand visible—and when
-            to move unseen.
+            The Guardians’ rigid control and the spread of Seron Darkness turn Westbond 
+            into a battleground of ideology and fear, forcing Nova Watch to choose 
+            between visibility and secrecy.
           </p>
         </article>
       </div>
     </section>
 
-    <!-- RIGHT: Navigation / Atmosphere -->
+    <!-- RIGHT SIDE -->
     <aside class="side-panel">
       <div>
         <div class="nav-block">
-          <h3>Explore The Series</h3>
+          <h3>Explore the Series</h3>
           <div class="nav-buttons">
-            <a href="characters.html">
-              <span class="label">Characters</span>
-              <span class="chevron">⟶</span>
-            </a>
-            <a href="lore.html">
-              <span class="label">Lore</span>
-              <span class="chevron">⟶</span>
-            </a>
-            <a href="stories.html">
-              <span class="label">Stories</span>
-              <span class="chevron">⟶</span>
-            </a>
+            <a href="characters.html">Characters <span>⟶</span></a>
+            <a href="lore.html">Lore <span>⟶</span></a>
+            <a href="stories.html">Stories <span>⟶</span></a>
           </div>
         </div>
 
         <div class="atmosphere-block">
           <h4>City Atmosphere</h4>
           <p>
-            Westbond’s skyline is a mix of worn stone, reinforced steel, and dim
-            amber lights cutting through the dark. Patrol routes, safehouses, and
-            contested districts form the living map of Nova Watch activity—each
-            zone marked by the tension between protection and oppression.
+            Westbond’s skyline mixes worn stone, reinforced steel, and dim amber lights. 
+            Patrol routes, safehouses, and contested districts form the living map of 
+            Nova Watch activity, each marked by tension between protection and oppression.
           </p>
         </div>
       </div>
@@ -368,6 +299,7 @@
         Westbond City RP · Nova Watch Series Node
       </div>
     </aside>
+
   </div>
 </body>
 </html>
