@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Lore | Westbond City RP</title>
+
+  <style>
+    :root {
+      --brown-dark: #1a120c;
+      --brown: #3b2a1c;
+      --beige: #d9c3a3;
+      --beige-light: #f3e2c5;
+      --black: #000;
+      --gold: #c9a15b;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Segoe UI", sans-serif;
+    }
+
+    body {
+      background: radial-gradient(circle at top, var(--brown) 0%, var(--brown-dark) 40%, var(--black) 100%);
+      color: var(--beige-light);
+      padding: 40px 20px;
+      display: flex;
+      justify-content: center;
+    }
+
+    .page-wrapper {
+      width: 100%;
+      max-width: 1100px;
+      background: linear-gradient(135deg, rgba(15,10,7,0.95), rgba(40,26,18,0.98));
+      border-radius: 18px;
+      border: 1px solid rgba(201,161,91,0.35);
+      box-shadow: 0 0 40px rgba(0,0,0,0.9);
+      overflow: hidden;
+      display: grid;
+      grid-template-columns: 3fr 2fr;
+    }
+
+    /* LEFT SIDE */
+    .content-section {
+      padding: 32px;
+      border-right: 1px solid rgba(217,195,163,0.12);
+      display: flex;
+      flex-direction: column;
+      gap: 32px;
+    }
+
+    .page-title {
+      font-size: 2rem;
+      text-transform: uppercase;
+      letter-spacing: 0.16em;
+      color: var(--beige-light);
+    }
+
+    .divider {
+      height: 1px;
+      background: linear-gradient(to right, transparent, rgba(217,195,163,0.45), transparent);
+      margin: 6px 0 20px 0;
+    }
+
+    /* LORE CARD */
+    .lore-card {
+      background: rgba(27,17,11,0.9);
+      border-radius: 14px;
+      border: 1px solid rgba(201,161,91,0.35);
+      padding: 20px;
+    }
+
+    .lore-card h2 {
+      font-size: 1.4rem;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      color: var(--gold);
+      margin-bottom: 6px;
+    }
+
+    .lore-image {
+      width: 100%;
+      border-radius: 12px;
+      margin: 14px 0;
+      border: 1px solid rgba(201,161,91,0.35);
+      box-shadow: 0 0 20px rgba(0,0,0,0.6);
+    }
+
+    .lore-text {
+      font-size: 0.9rem;
+      line-height: 1.6;
+      color: var(--beige-light);
+    }
+
+    .lore-text strong {
+      color: var(--gold);
+    }
+
+    /* RIGHT SIDE */
+    .side-panel {
+      padding: 28px;
+      background: radial-gradient(circle at 0% 0%, var(--brown) 0%, var(--brown-dark) 40%, var(--black) 100%);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 20px;
+    }
+
+    .nav-block h3 {
+      font-size: 0.95rem;
+      text-transform: uppercase;
+      letter-spacing: 0.18em;
+      color: var(--beige-light);
+      margin-bottom: 12px;
+    }
+
+    .nav-buttons {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .nav-buttons a {
+      display: flex;
+      justify-content: space-between;
+      padding: 10px 12px;
+      border-radius: 999px;
+      border: 1px solid rgba(217,195,163,0.45);
+      background: linear-gradient(135deg, rgba(243,226,197,0.08), rgba(75,52,35,0.85));
+      color: var(--beige-light);
+      text-decoration: none;
+      font-size: 0.9rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      transition: 0.2s ease;
+    }
+
+    .nav-buttons a:hover {
+      background: linear-gradient(135deg, rgba(243,226,197,0.16), rgba(90,60,40,0.95));
+      transform: translateY(-1px);
+      box-shadow: 0 0 12px rgba(0,0,0,0.6);
+    }
+
+    .footer-strip {
+      font-size: 0.78rem;
+      text-align: right;
+      color: rgba(217,195,163,0.7);
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+    }
+
+    @media (max-width: 900px) {
+      .page-wrapper {
+        grid-template-columns: 1fr;
+      }
+      .content-section {
+        border-right: none;
+        border-bottom: 1px solid rgba(217,195,163,0.12);
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="page-wrapper">
+
+    <!-- LEFT SIDE -->
+    <section class="content-section">
+      <h1 class="page-title">Lore</h1>
+      <div class="divider"></div>
+
+      <!-- LORE 1 -->
+      <div class="lore-card">
+        <h2>Guardia City Bank Robbery</h2>
+        <img src="WestBound Lore 1.png" class="lore-image" alt="Guardia City Bank Robbery">
+
+        <div class="lore-text">
+          When <strong>Alan Jez</strong> planned the largest heist Westbond had ever seen,
+          he knew he couldn’t do it alone. He gathered <strong>Patsy Leon</strong> and
+          <strong>Delmar Zack</strong> for a direct strike against
+          <strong>Guardia City</strong> and the <strong>Guardians</strong> themselves.
+
+          <br><br>
+          The trio stormed the bank with precision — Alan cracking the vault,
+          Patsy controlling the crowd, and Delmar holding the line with his
+          laser pistol. Their escape was nearly cut short when
+          <strong>Kole Rogue (The Arsonist)</strong>, a Guardian member, confronted them.
+
+          <br><br>
+          Delmar didn’t hesitate. He stunned Kole with a clean laser shot and
+          coldly told him he was “a mistake of life,” before dragging Patsy and
+          Alan out of the burning lobby.
+
+          <br><br>
+          The money was delivered to Westbond’s poorest districts by nightfall.
+          The Guardians called it terrorism.  
+          Westbond called it justice.
+        </div>
+      </div>
+
+      <!-- LORE 2 -->
+      <div class="lore-card">
+        <h2>The Guardia City Vandalism</h2>
+        <img src="WestBound Lore2.png" class="lore-image" alt="Guardia City Vandalism">
+
+        <div class="lore-text">
+          After the bank heist, the trio struck again — this time targeting
+          <strong>Seron’s Statue</strong> in the heart of Guardia City.  
+          <strong>Alan Jez</strong>, <strong>Patsy Leon</strong>, and
+          <strong>Delmar Zack</strong> planned to vandalize the monument as a
+          symbolic blow against Seron Darkness and the Guardians’ propaganda.
+
+          <br><br>
+          But the plan collapsed instantly when <strong>Tom Letanio</strong> appeared.
+          With his indigo energy blazing, Tom unleashed a barrage of
+          <strong>Indigo Fist</strong> strikes that nearly killed all three.
+
+          <br><br>
+          Delmar managed to pull Patsy and Alan out of the blast zone, escaping
+          through the narrow alleys of Guardia. Patsy spent the entire escape
+          ranting about Tom Letanio — swearing he hated him more than any Guardian
+          alive.
+
+          <br><br>
+          The statue remained untouched.  
+          But the message was still sent:
+          Westbond wasn’t afraid.
+        </div>
+      </div>
+
+    </section>
+
+    <!-- RIGHT SIDE -->
+    <aside class="side-panel">
+      <div>
+        <div class="nav-block">
+          <h3>Navigate</h3>
+          <div class="nav-buttons">
+            <a href="index.html">Home <span>⟶</span></a>
+            <a href="characters.html">Characters <span>⟶</span></a>
+            <a href="stories.html">Stories <span>⟶</span></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-strip">
+        Westbond City RP · Lore Archive
+      </div>
+    </aside>
+
+  </div>
+
+</body>
+</html>
